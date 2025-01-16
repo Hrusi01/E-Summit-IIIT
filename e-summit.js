@@ -57,18 +57,39 @@ function menuAnimation() {
     var menu = document.getElementById("menu")
     var full = document.querySelector("#full-scr")
     var nav = document.getElementById("navbar")
+    var navLinks= document.querySelectorAll(".showOnMobile")
+    var menuIcon = document.getElementById("menu-icon");
     var flag = 0
     menu.addEventListener("click", function () {
         if (flag == 0) {
-            full.style.top = 0
+            full.style.top = 0;
             nav.style.background ="transparent";
-            flag = 1
+            flag = 1;
+            navLinks.forEach(function (link) {
+                link.addEventListener("click", function () {
+                    full.style.top = "-200%";
+                    nav.style.background = "#622f91";
+                    menuIcon.classList.remove("active"); // Remove the active class
+                    flag = 0; // Reset flag
+                });
+            });
+        
+            // Add an event listener for #full-scr to also hide the menu
+            full.addEventListener("click", function () {
+                full.style.top = "-200%";
+                nav.style.background = "#622f91";
+                menuIcon.classList.remove("active"); // Remove the active class
+                flag = 0; // Reset flag
+            });
         } else {
-            full.style.top = "-200%"
+            full.style.top = "-200%";
             nav.style.background ="#622f91";
-            flag = 0
+            flag = 0;
         }
     })
+    
 }
+    
+
 
 menuAnimation();
