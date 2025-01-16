@@ -256,7 +256,19 @@ nav:hover ~ .bulb {
         margin-bottom: 0;
         margin-top: -220px;
     }
-
+    .iiit-bh-logo{
+        position:absolute ;
+        right:0;
+        top:0;
+        height:100px;
+        width:100px;
+        object-fit: contain;
+        margin:70px;
+    }
+    .iiit-bh-logo img{
+        height:100%;
+        width:100%;
+    }
     .buttons {
         display: flex;
         flex-direction: column;
@@ -312,8 +324,21 @@ nav:hover ~ .bulb {
             margin-bottom: 0;
             margin-top: -260px;
         }
-        
-        
+        .iiit-bh-logo{
+            height:70px;
+            width:70px;
+            margin-top:60px;
+            margin-right:40px;
+        }
+        .btn{
+            width:auto;
+            padding-inline: 40px;
+            font-size:1.5rem;
+        }
+        #btn1{
+            width:auto;
+            padding-inline: 40px;
+        }
     }
 
 
@@ -324,6 +349,7 @@ nav:hover ~ .bulb {
         .buttons {
             margin-top: 75%;
         }
+
     }
 
 
@@ -1221,7 +1247,21 @@ ul{
     width: 90%;
     opacity: 0.7;
 }
-
+.contri-name a{
+    color:#f0e00499;
+}
+.contri-name a:hover{
+    color:gold;
+}
+.contri{
+    margin-top: 50px;
+    
+}
+.contri-name,.contri-text{
+    font-size: .8rem;
+    cursor:pointer;
+    color:#FFF;
+}
 @media (max-width: 550px) {
     .footer-col {
         flex: 1 1 100%;
@@ -1238,7 +1278,14 @@ ul{
     }
     .first-text,.last-text{
         font-size: .85rem;
+        cursor:pointer;
     }
+    .contri{
+        margin-top: 20px;
+        
+    }
+    
+    
 }
     
     
