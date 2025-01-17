@@ -141,7 +141,7 @@ nav:hover ~ .bulb {
     transition: all ease 0.5s;
   }
   #full-div1 {
-    height: 37%;
+    height: 40%;
     width: 100%;
     background: #622f91;
     opacity: 57%;
@@ -908,6 +908,78 @@ p {
     }
 }
 
+.brochure-container {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.brochure-title {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    justify-content: center;
+}
+.responsive-pdf {
+    width: 1000px; /* Default width */
+    height: 600px; /* Default height */
+}
+#open-pdf{
+    border:none;
+    background-color: #622f91;
+
+    background: linear-gradient(45deg, #622f91, #410d70);
+    color:#fff;
+    padding:10px;
+    border-radius:5px ;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+
+} 
+#open-pdf:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    transform: translateY(-4px);
+
+}
+#open-pdf:focus {
+    outline: 2px solid #622f91;
+    outline-offset: 4px;
+}
+  @media (max-width: 1024px) {
+    /* Styles for tablets */
+    .responsive-pdf {
+      width: 750px;
+      height: 531px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Styles for mobile devices */
+    .responsive-pdf {
+      width: 500px;
+      height: 370px;
+    }
+    .brochure-title {
+        font-size:35px;
+        margin-bottom: 30px;
+    }
+    .brochure-container{
+        margin-bottom: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Styles for small devices */
+    .responsive-pdf {
+      width: 350px;
+      height: 230px;
+    }
+  }
+  
 
 
 .speakers-container {
