@@ -943,6 +943,7 @@ p {
 #open-pdf:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     transform: translateY(-4px);
+
 }
 #open-pdf:focus {
     outline: 2px solid #622f91;
@@ -952,7 +953,7 @@ p {
     /* Styles for tablets */
     .responsive-pdf {
       width: 750px;
-      height: 530px;
+      height: 531px;
     }
   }
   
