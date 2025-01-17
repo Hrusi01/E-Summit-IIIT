@@ -141,7 +141,7 @@ nav:hover ~ .bulb {
     transition: all ease 0.5s;
   }
   #full-div1 {
-    height: 40%;
+    height: 45%;
     width: 100%;
     background: #622f91;
     opacity: 57%;
@@ -915,6 +915,10 @@ p {
     p {
         font-size: 0.9rem;
     }
+    .days-left{
+        font-size: 0.8rem;
+        padding:7px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -954,7 +958,12 @@ p {
     width: 1000px; /* Default width */
     height: 600px; /* Default height */
 }
-.responsive-pdf img{
+.responsive-img {
+    width: 1000px; /* Default width */
+    height: 600px; /* Default height */
+    display:none;
+}
+.responsive-img img{
     border-radius: 15px;
     border:2px solid white;
     width:100%;
@@ -990,7 +999,13 @@ p {
     .responsive-pdf {
       width: 750px;
       height: 531px;
+      display:none;
     }
+    .responsive-img {
+        width: 750px;
+      height: 531px;
+        display:block;
+      }
   }
   
   @media (max-width: 768px) {
@@ -998,7 +1013,13 @@ p {
     .responsive-pdf {
       width: 500px;
       height: 370px;
+      display:none;
     }
+    .responsive-img {
+        width: 500px;
+        height: 370px;
+        display:block;
+      }
     .brochure-title {
         font-size:35px;
         margin-bottom: 30px;
@@ -1014,7 +1035,7 @@ p {
   
   @media (max-width: 480px) {
     /* Styles for small devices */
-    .responsive-pdf {
+    .responsive-img{
       width: 350px;
       height: 230px;
     }
@@ -1293,7 +1314,9 @@ p {
         font-size:35px;
     }
     .child {
-        width: 60%;
+        width: 300px;
+        margin-right:30px;
+        height: 200px;
     }
     .child img{
         width: 100%;
