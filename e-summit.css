@@ -330,11 +330,7 @@ nav:hover ~ .bulb {
     font-size: 1rem;
     margin:20px;
 }
-@media (max-width: 1300px){
-    .iiit-bh-logo{
-        display:block;
-    }
-}
+
     @media (max-width: 768px) {
 
         .home{
@@ -383,6 +379,9 @@ nav:hover ~ .bulb {
         
             font-size: .8rem;
             margin:10px;
+        }
+        .iiit-bh-logo{
+            display:block;
         }
 
     }
