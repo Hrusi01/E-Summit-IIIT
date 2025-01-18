@@ -52,6 +52,8 @@ document.addEventListener("DOMContentLoaded", function () {
 document.getElementById("menu-icon").addEventListener("click", function () {
     this.classList.toggle("active");
 });
+
+
 function menuAnimation() {
 
     var menu = document.getElementById("menu")
@@ -69,17 +71,17 @@ function menuAnimation() {
                 link.addEventListener("click", function () {
                     full.style.top = "-200%";
                     nav.style.background = "#622f91";
-                    menuIcon.classList.remove("active"); // Remove the active class
-                    flag = 0; // Reset flag
+                    menuIcon.classList.remove("active"); 
+                    flag = 0; 
                 });
             });
         
-            // Add an event listener for #full-scr to also hide the menu
+            
             full.addEventListener("click", function () {
                 full.style.top = "-200%";
                 nav.style.background = "#622f91";
-                menuIcon.classList.remove("active"); // Remove the active class
-                flag = 0; // Reset flag
+                menuIcon.classList.remove("active"); 
+                flag = 0; 
             });
         } else {
             full.style.top = "-200%";
@@ -89,8 +91,41 @@ function menuAnimation() {
     })
     
 }
+function cardAnimation() {
     
-
+    const cards = document.querySelectorAll('.card-blur');
+  
+    
+    cards.forEach(card => {
+      
+      card.addEventListener('mouseenter', () => {
+        const textBox = card.querySelector('.box-text'); 
+        if (textBox) {
+          textBox.style.display = 'block'; 
+        }
+        const arrow = card.querySelector('.card-arrow'); 
+        if (arrow) {
+        arrow.style.transform = 'rotate(45deg)'; 
+        }
+      });
+  
+      
+      card.addEventListener('mouseleave', () => {
+        const textBox = card.querySelector('.box-text'); 
+        if (textBox) {
+          textBox.style.display = 'none'; 
+        }
+        const arrow = card.querySelector('.card-arrow');
+        if (arrow) {
+          arrow.style.transform = 'rotate(0deg)'; 
+        }
+      });
+    });
+  }
+  
+  
+  document.addEventListener('DOMContentLoaded', cardAnimation);
+  
 
 menuAnimation();
 
