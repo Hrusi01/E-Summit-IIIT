@@ -1046,6 +1046,7 @@ p {
 
     .card-row {
         gap: 30px;
+        align-items: center;
     }
 
     .card {
@@ -1058,6 +1059,9 @@ p {
     .days-left{
         font-size: 0.8rem;
         padding:7px;
+        right:-5px;
+        top:-8px;
+
     }
 }
 
