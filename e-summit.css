@@ -265,7 +265,7 @@ nav:hover ~ .bulb {
         width:100px;
         object-fit: cover;
         margin:70px;
-        
+        display:none;
     }
     .iiit-bh-logo img{
         height:100%;
@@ -330,7 +330,11 @@ nav:hover ~ .bulb {
     font-size: 1rem;
     margin:20px;
 }
-
+@media (max-width: 1300px){
+    .iiit-bh-logo{
+        display:block;
+    }
+}
     @media (max-width: 768px) {
 
         .home{
@@ -352,6 +356,7 @@ nav:hover ~ .bulb {
             width:70px;
             margin-top:60px;
             margin-right:40px;
+
         }
         .btn{
             width:auto;
@@ -727,12 +732,12 @@ h1 {
 }
 
 #card1{
-    background: url("images/comp3.jpg");
+    background: url("images/verbal_combat.png");
     background-size:cover;
 
 }
 #card3{
-    background: url("images/virtual_stock.jpg");
+    background: url("images/virtual_stock\ exchange.png");
     background-size:cover;
 }
 #card4{
@@ -793,7 +798,7 @@ h1 {
 
 .image-container {
     width:1000px;
-    height: 250px;
+    height: 1000px;
     overflow: hidden;
     border-radius: 10px;
     margin-right: 20px;
@@ -958,7 +963,7 @@ p {
     
     .image-container {
         width: 100%;
-        height: 200px;
+        height: 80vw;
         overflow: hidden;
         border-radius: 10px;
         margin-bottom: 10px;
@@ -1030,7 +1035,7 @@ p {
         }
     
         .image-container {
-            height: 180px;
+            height: auto;
         }
     
         p {
@@ -1075,7 +1080,7 @@ p {
     }
 
     .image-container {
-        height: 180px;
+        height: auto;
     }
 
     p {
