@@ -193,11 +193,11 @@ nav:hover ~ .bulb {
 #full-div1:hover ~ .bulb {
     opacity: 1;
 }
-@media (max-width:500px){
+@media (max-width:1100px){
     #menu {
         display: flex;
         
-       
+        height:10vw;
         border-radius: 50px;
         
         
@@ -205,10 +205,14 @@ nav:hover ~ .bulb {
     }
     
     nav {
-        height:20vw;
+        height:10vw;
+    }
+    .menu-icon{
+        width:7vw;
+        height:5vw;
     }
 }
-@media(max-width:500px){
+@media(max-width:1100px){
     .hideOnMobile{
         display: none;
     }
@@ -218,9 +222,20 @@ nav:hover ~ .bulb {
 
 }
 
-@media(max-width:470px){
+@media(max-width:500px){
     .sidebar{
         width: 100%;
+    }
+    nav{
+        height:20vw;
+
+    }
+    #menu{
+        height:20vw;
+    }
+    .menu-icon{
+        height:7vw;
+        width:10vw;
     }
 }
 
@@ -336,17 +351,7 @@ nav:hover ~ .bulb {
         .home{
             height: 100%;
         }
-        .e-summit-logo{
-            width: 100%;
-            margin-top: -100px;
-        }
-        .e-summit-logo img {
-    
-            width: 100%;
-            height: auto;
-            margin-bottom: 0;
-            
-        }
+        
         .iiit-bh-logo{
             height:70px;
             width:70px;
@@ -383,10 +388,22 @@ nav:hover ~ .bulb {
         .iiit-bh-logo{
             display:block;
         }
-
+        
     }
 
+@media (max-width:500px){
+    .e-summit-logo{
+        width: 100%;
+        margin-top: -100px;
+    }
+    .e-summit-logo img {
 
+        width: 100%;
+        height: auto;
+        margin-bottom: 0;
+        
+    }
+}
 
 
 
