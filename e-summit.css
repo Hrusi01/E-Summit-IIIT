@@ -1254,10 +1254,9 @@ p {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(6, 6, 6);
-    text-shadow: 200px ;
+    color: #c8a4e3;
     opacity: 0;
     margin-top: 10px;
     transition: opacity 0.3s ease;
