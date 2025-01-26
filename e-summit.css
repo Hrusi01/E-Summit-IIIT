@@ -1732,7 +1732,7 @@ ul{
     border-radius: 5px;
     background-color: #622F92;
 }
-.event-section.h2{
+.event-section h2{
     text-align: centre;
 }
 .day {
@@ -1759,6 +1759,7 @@ ul{
     text-transform: uppercase;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .event-content h2 {
