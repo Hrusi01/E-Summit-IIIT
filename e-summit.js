@@ -1,3 +1,35 @@
+document.addEventListener("DOMContentLoaded", function() {
+  // Register the ScrollTrigger plugin
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Animate the events when they scroll into view
+  gsap.utils.toArray(".event").forEach(event => {
+      gsap.from(event, {
+          opacity: 0,
+          y: 50,
+          duration: 1,
+          scrollTrigger: {
+              trigger: event,
+              start: "top 93%",
+              end: "top 20%",
+              scrub: true,
+              markers: false // Set to true to see markers for debugging
+          }
+      });
+  });
+
+  const navLinks = document.querySelectorAll("nav a");
+
+  navLinks.forEach(link => {
+      link.addEventListener("click", function() {
+          setTimeout(() => {
+              ScrollTrigger.refresh();
+          }, 100); // Adjust timeout as needed
+      });
+  });
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const eventGallery = document.createElement("div");
     eventGallery.classList.add("event-gallery");
@@ -128,4 +160,4 @@ function cardAnimation() {
   
 
 menuAnimation();
-
+ 
