@@ -160,4 +160,22 @@ function cardAnimation() {
   
 
 menuAnimation();
- 
+document.querySelectorAll('.speaker-card').forEach(card => {
+    const speakerName = card.querySelector('.speaker-name');
+    
+    card.addEventListener('mouseenter', () => {
+      if (speakerName) {
+        speakerName.style.display = 'block';
+      }
+    });
+  
+    card.addEventListener('mouseleave', () => {
+      if (speakerName) {
+        speakerName.style.display = 'none';
+      }
+    });
+  });
+
+
+
+  

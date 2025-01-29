@@ -1256,11 +1256,20 @@ p {
     transform: translateX(-50%);
     font-size: 1.5rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #c8a4e3;
-    opacity: 0;
+    color: #ffffff;
+    
     margin-top: 10px;
     transition: opacity 0.3s ease;
+    background-color:#7b2cc0; /* Black with 50% opacity */
+    backdrop-filter: blur(10px); /* Background blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    display:none;
+    
 }
+
 
 .speaker-card:hover {
     transform: scale(1.25);
@@ -1268,9 +1277,7 @@ p {
     filter: hue-rotate(-10deg);
     box-shadow:0 25px 40px rgba(0,0,0,.5);
 }
-.speaker-card:hover .speaker-name {
-    opacity: 1;
-}
+
 @media (max-width: 480px) {
     .speaker-card{
         width: 45%;
@@ -1284,18 +1291,20 @@ p {
         font-size:35px;
     }
     .speaker-name{
-        font-size: .85rem;
+        font-size: .6rem;
         opacity:1;
-    }
-}
-@media (max-width: 700px) {
-    .speaker-card:hover .speaker-name {
-        opacity: 1;
     }
     .speaker-name{
         
-        opacity:1;
+        display:block;
     }
+}
+@media (max-width: 700px) {
+    .speaker-name{
+        
+        display:block;
+    }
+    
 
 
 }
@@ -1776,17 +1785,23 @@ ul{
     gap: 40px;
     margin: 20px;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #622F92;
+   
+    
+    
+    
 }
 .event-section h2{
     text-align: centre;
+
 }
 .day {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background: url(images/day-bg2.png);
+    background-size: cover;
+    border: 4px solid #ddd;
+    padding-bottom: 40px;
 }
 
 .day h1 {
@@ -1796,7 +1811,22 @@ ul{
     border-radius: 10px;
     background-color: #a57bccaa;
 }
-
+.day-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #a57bccaa;
+    object-fit: cover;
+    margin:20px;
+}
+.day-head img{
+    width:100%;
+    height:100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 5px solid white;
+}
 .event {
     margin-bottom: 20px;
 }
@@ -1814,6 +1844,9 @@ ul{
     margin: 0;
     font-size: 1.5em;
     color: white;
+    background-color:#8f60bd;
+    padding:10px 20px;
+    border-radius: 50px;
 }
 
 .event-content p {
