@@ -1285,7 +1285,19 @@ p {
     }
     .speaker-name{
         font-size: .85rem;
+        opacity:1;
     }
+}
+@media (max-width: 700px) {
+    .speaker-card:hover .speaker-name {
+        opacity: 1;
+    }
+    .speaker-name{
+        
+        opacity:1;
+    }
+
+
 }
 
 
@@ -1359,6 +1371,9 @@ p {
     
     border-radius:30px;
 }
+#scard8{
+    width:400px;
+}
 @media (max-width:1000px){
     #scard1{
         width: 100px;
@@ -1406,6 +1421,11 @@ p {
         width:300px;
         height:150px;
         border-radius:30px;
+    }
+    #scard8{
+        width:300px;
+        height:100px;
+        border-radius:10px;
     }
     #scard100{
         width:300px;
