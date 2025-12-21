@@ -41,6 +41,20 @@ body, html {
 .Aman p span{
     color:gold;
 }
+#loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #e5e7eb;
+  border-top-color: #aa63f1; 
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 /* Navbar */
 nav {
     position: fixed;
